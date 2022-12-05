@@ -1,1 +1,1028 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Marco Trancoso Vaz</title>
+    <meta name="description" content="Marco Trancoso Vaz curriculum vitae"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/aos.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles/main.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+	<!-- Add the slick-theme.css if you want default styling -->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>
+	<!-- Add the slick-theme.css if you want default styling -->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"/>
+	<link rel="stylesheet" href="js/cube/jquery.flipbox.css">
+    <style>
+            body { margin: 0; background-color: #000; };
+
+div {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.mine {
+    margin: 0 20px;
+    box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.15);
+    border-radius: 4px;
+    float: left;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    transform: scale(1);
+    transition: all .5s ease-in-out;
+    overflow: hidden;
+}
+			/* Slider */
+.slick-slide {
+    margin: 0px 20px;
+}
+
+.slick-slide img {
+    width: 70px;
+	height: 40px;
+}
+
+.slick-slider
+{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+            user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+    </style>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-130756035-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-130756035-1');
+</script>
+<script
+src="https://code.jquery.com/jquery-3.6.1.min.js"
+integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+crossorigin="anonymous">
+</script>
+<script>
+  document.addEventListener('readystatechange', event => {
+  switch (document.readyState) {
+    case "loading":
+      console.log("document.readyState: ", document.readyState,
+       `- The document is still loading.`
+       );
+      break;
+    case "interactive":
+      console.log("document.readyState: ", document.readyState, 
+        `- The document has finished loading DOM. `,
+        `- "DOMContentLoaded" event`
+        );
+      break;
+    case "complete":
+      $(function() {
+        var url = window.location.href
+        var test = url.split('?')[1]
+        if (test){ var mcolor = url ? url.split('?')[1].split('+')[1] : window.location.search.slice(1); }else{var mcolor = "green" }
+        if (mcolor){ var cscolor = mcolor }else{ var cscolor = "green"}
+        document.getElementById("buttonhire").style.backgroundColor = 'blue' ;
+        document.getElementById("buttoncv").style.backgroundColor = 'blue' ;
+        $('.btn-primary').hover( function() {$( this ).css({"background":cscolor})},function() {$( this ).css({"background":"blue"})} )
+        $('#employeeabout p a').hover( function() {$( this ).css({"color":cscolor})},function() {$( this ).css({"color":"blue"})} )
+        $('.progress-badge a').hover( function() {$( this ).css({"color":cscolor})},function() {$( this ).css({"color":"blue"})} )
+        $('.h5 a').hover( function() {$( this ).css({"color":cscolor})},function() {$( this ).css({"color":"blue"})} )
+        $('.category a').hover( function() {$( this ).css({"color":cscolor})},function() {$( this ).css({"color":"blue"})} )
+        $('.page-header').css({"background":"linear-gradient(0deg, rgba(44, 44, 44, 0.2), "+ cscolor +")"})
+        $('.progress').css({"background":"light"+ cscolor})
+        $('.progress-bar').css({"background":cscolor})
+        $('.progress-value').css({"color":cscolor})
+        $(".col-md-3.bg-primary").attr('style', 'background-color: '+ cscolor +' !important');
+      });
+
+      console.log("document.readyState: ", document.readyState, 
+        `- The page DOM with Sub-resources are now fully loaded. `,
+        `- "load" event`
+        );
+      break;
+  }
+});
+</script>
+</head>
+  <body id="top">
+    <header>
+      <div class="profile-page sidebar-collapse">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-transparent bg-primary" color-on-scroll="400">
+          <div class="container">
+            <div class="navbar-translate"><a class="navbar-brand" href="#" rel="tooltip" >Marco Trancoso Vaz</a>
+              <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-bar bar1"></span><span class="navbar-toggler-bar bar2"></span><span class="navbar-toggler-bar bar3"></span></button>
+            </div>
+            <div class="collapse navbar-collapse justify-content-end" id="navigation">
+              <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="#skill">Skills</a></li>
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="#experience">Experience</a></li>
+				<li class="nav-item"><a class="nav-link smooth-scroll" href="#education">Education</a></li>
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="#projects">Portfolio</a></li>
+				<li class="nav-item"><a class="nav-link smooth-scroll" href="#reference">References</a></li>
+				<li class="nav-item"><a class="nav-link smooth-scroll" href="#logos">Expertise</a></li>
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="#contact">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <div class="page-content">
+      <div>
+<div class="profile-page">
+  <div class="wrapper">
+    <div class="page-header page-header-small" filter-color="blue">
+      <div class="page-header-image" data-parallax="true">
+            <div id="sphere"></div>
+      </div>
+      <div class="container">
+        <div class="content-center">
+          <div class="cc-profile-image"><a href="#"><img id="employeephoto" src="images/mtv.png" alt="Profile Picture"/></a></div>
+          <div class="h2 title" id="employeename">Marco Trancoso Vaz</div>
+          <p class="category text-white" id="shortdesc">Security Consultant, Blockchain enthusiast, Pseudo Data Scientist, Amateur Photographer</p><a class="btn btn-primary smooth-scroll mr-2" href="#contact" data-aos="zoom-in" id="buttonhire" data-aos-anchor="data-aos-anchor">Hire Me</a><a class="btn btn-primary" href="./mtv-cv.pdf" data-aos="zoom-in" id="buttoncv" data-aos-anchor="data-aos-anchor">Download CV</a>
+        </div>
+      </div>
+      <div class="section">
+        <div class="container">
+          <div class="button-container">
+              <a class="btn btn-default btn-round btn-lg btn-icon" href="#" Alt="Follow me on Github" title="Follow me on Github"><i class="fa fa-github"></i></a>
+              <a class="btn btn-default btn-round btn-lg btn-icon" href="#" Alt="Follow me on Linkedin" title="Follow me on Linkedin"><i class="fa fa-linkedin"></i></a>
+              <a class="btn btn-default btn-round btn-lg btn-icon" href="#" Alt="Follow me on Twitter" title="Follow me on Twitter"><i class="fa fa-twitter"></i></a>
+              <a class="btn btn-default btn-round btn-lg btn-icon" href="#" Alt="Follow me on Medium" title="Follow me on Medium"><i class="fa fa-medium"></i></a>
+         </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section" id="about">
+  <div class="container">
+    <div class="card" data-aos="fade-up" data-aos-offset="10">
+      <div class="row">
+        <div class="col-lg-6 col-md-12">
+          <div class="card-body">
+            <div class="h4 mt-0 title">About</div>
+            <div id="employeeabout">
+              <p>Hi! I am Marco Trancoso Vaz. Information Technology Security specialist, Blockchain enthusiast, Data Scientist wannabe, hobbyist developer and photographer.</p>
+              <p> With over 25 years of professional expertise, I've specialized my skills on different areas such as, Management, Compliance, Security, Delivery and many others. Former CISO, DevOPs, Blue Team, ISO and other frameworks senior consultant.  <a href="https://www.linkedin.com/in/marcovaz" title="Visit my Linkedin profile page" id="learnmore" target="_blank">Learn More</a></p>
+              <p>As a goal, I want to continue learning, applying the knowledge that I continually acquire, which allows me to help organizations design, implement and acquire the necessary levels of operability in line with the objectives of their business.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12">
+          <div class="card-body">
+            <div class="h4 mt-0 title">Basic Information</div>
+            <div class="row">
+              <div class="col-sm-4"><strong class="text-uppercase">Age:</strong></div>
+              <div class="col-sm-8" id="age"></div>
+			  <script>
+//			  const getAge = birthDate => Math.floor((new Date() - new Date(birthDate).getTime()) / 31556925994)
+//			  document.getElementById("age").innerHTML = getAge('1972-08-16');
+			  </script>
+            </div>
+            <div class="row mt-3">
+              <div class="col-sm-4"><strong class="text-uppercase">Email:</strong></div>
+              <div class="col-sm-8" id="employeeemail"">marco.trancoso.vaz@gmail.com</div>
+            </div>
+            <div class="row mt-3">
+              <div class="col-sm-4"><strong class="text-uppercase">Phone:</strong></div>
+              <div class="col-sm-8" id="employephone">+351 915 037 431</div>
+            </div>
+            <div class="row mt-3">
+              <div class="col-sm-4"><strong class="text-uppercase">Address:</strong></div>
+              <div class="col-sm-8" id="employeesmalladdress">S. Pedro do Estoril, Cascais, Portugal</div>
+            </div>
+            <div class="row mt-3">
+              <div class="col-sm-4"><strong class="text-uppercase">Language:</strong></div>
+              <div class="col-sm-8" id="employeelanguages">Portuguese, English, French, Spanish</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section" id="skill">
+  <div class="container">
+    <div class="h4 text-center mb-4 title">Professional Skills</div>
+    <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+      <div class="card-body" id="skills">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="progress-container progress-primary"><span class="progress-badge"><a href='ht</a>tps://en.wikipedia.org/wiki/Governance,_risk_management,_and_compliance'>Governance,risk management,compliance</a></span>
+              <div class="progress">
+                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div><span class="progress-value">80%</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="progress-container progress-primary"><span class="progress-badge"><a href='https://en.wikipedia.org/wiki/Disaster_recovery_and_business_continuity_auditing'>Disaster Recovery and Business Continuity</a></span>
+              <div class="progress">
+                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 85%;"></div><span class="progress-value">85%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="progress-container progress-primary"><span class="progress-badge"><a href='https://en.wikipedia.org/wiki/Information_technology_management'>Information Technology Management</a></span>
+              <div class="progress">
+                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div><span class="progress-value">80%</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="progress-container progress-primary"><span class="progress-badge"><a href='https://en.wikipedia.org/wiki/DevOps'>DevOPs</a></span>
+              <div class="progress">
+                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div><span class="progress-value">80%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="progress-container progress-primary"><span class="progress-badge"><a href='https://en.wikipedia.org/wiki/Cloud_management'>Cloud infrastructure integration/management</a></span>
+              <div class="progress">
+                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div><span class="progress-value">85%</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="progress-container progress-primary"><span class="progress-badge"><a href='https://en.wikipedia.org/wiki/Network_operations_center'>NOC</a> / <a href='https://en.wikipedia.org/wiki/Information_security_operations_center'>SOC</a> implementation / management</a></span>
+              <div class="progress">
+                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div><span class="progress-value">80%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="progress-container progress-primary"><span class="progress-badge"><a href='https://en.wikipedia.org/wiki/Blue_team_(computer_security)'>Blue Team</a>/<a href='https://en.wikipedia.org/wiki/Red_team'>Red Team</a></span>
+              <div class="progress">
+                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 85%;"></div><span class="progress-value">85%</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="progress-container progress-primary"><span class="progress-badge"><a href='https://en.wikipedia.org/wiki/Chief_information_security_officer'>Chief Information Security Officer</a></span>
+              <div class="progress">
+                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div><span class="progress-value">80%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="progress-container progress-primary"><span class="progress-badge"><a href='https://en.wikipedia.org/wiki/Blockchain'>Blockchain</a> / <a href='https://en.wikipedia.org/wiki/Hyperledger'>Hyperledger</a> / <a href='https://en.wikipedia.org/wiki/Distributed_ledger'>Distributed ledger</a></span>
+              <div class="progress">
+                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div><span class="progress-value">85%</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="progress-container progress-primary"><span class="progress-badge"><a href='https://en.wikipedia.org/wiki/Data_science'>Data scientist</a> / <a href='https://en.wikipedia.org/wiki/Artificial_intelligence'>AI</a> / <a href='https://en.wikipedia.org/wiki/Machine_learning'>Machine Learning</a></span>
+              <div class="progress">
+                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div><span class="progress-value">80%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="progress-container progress-primary"><span class="progress-badge"><a href='https://www.google.com/maps/contrib/101026295028071345596/photos/@38.6989304,-9.3872156,17z/data=!3m1!4b1!4m3!8m2!3m1!1e1?authuser=2'>Google Photographer</a></span>
+              <div class="progress">
+                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div><span class="progress-value">85%</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="progress-container progress-primary"><span class="progress-badge"><a href='https://en.wikipedia.org/wiki/Web_developer'>Web developer</a> / <a href='https://en.wikipedia.org/wiki/Programmer'>Programmer</a></span>
+              <div class="progress">
+                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div><span class="progress-value">80%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section" id="experience">
+  <div class="container cc-experience" id="xperience">
+    <div class="h4 text-center mb-4 title">Work Experience</div>
+    <div class="card">
+      <div class="row">
+        <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body cc-experience-header">
+            <p>Present Objectives</p>
+            <div class="h5">
+				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 460 460" style="enable-background:new 0 0 460 460;" xml:space="preserve" width="70" height="70">
+					<g id="XMLID_1192_">
+						<path id="XMLID_825_" style="fill:#361C0A;" d="M389.408,306.311c-4.183,5.096-8.63,10.046-13.364,14.816   c-41.736,42.059-96.769,62.521-151.461,61.438V460h-19.846v-78.759V370v-3.322c0-2.956,2.531-5.256,5.451-4.968   c54.217,5.358,110.296-12.877,151.823-54.726c4.74-4.777,9.169-9.748,13.299-14.882L389.408,306.311z"/>
+						<path id="XMLID_1364_" style="fill:#7C4627;" d="M96.607,460c3.991-17.192,19.289-30,37.565-30h2   c3.787-17.472,19.219-30.556,37.692-30.556h81.59c18.473,0,33.906,13.084,37.692,30.556h2c18.276,0,33.574,12.808,37.565,30H96.607   z M383.06,328.198L74.326,17.071c-3.875-3.905-3.875-10.237,0-14.142l0,0c3.875-3.905,10.158-3.905,14.033,0l308.735,311.127   c3.875,3.905,3.875,10.237,0,14.142h0C393.218,332.103,386.935,332.103,383.06,328.198z"/>
+						<path id="XMLID_1472_" style="fill:#582A00;" d="M139.842,420h149.634c1.651,3.107,2.903,6.461,3.67,10H136.172   C136.939,426.461,138.191,423.107,139.842,420z M100.453,450c-1.712,3.099-3.023,6.454-3.846,10h236.105   c-0.823-3.546-2.134-6.901-3.846-10H100.453z"/>
+						<path id="XMLID_1261_" style="fill:#819692;" d="M397.386,172.635c0,93.888-75.526,170-168.693,170S60,266.523,60,172.635   s75.526-170,168.693-170S397.386,78.746,397.386,172.635z"/>
+						<path id="XMLID_1259_" style="fill:#8AA6A1;" d="M377.589,152.71c0,75.06-60.38,135.909-134.863,135.909   S107.862,227.77,107.862,152.71s60.38-135.909,134.863-135.909S377.589,77.65,377.589,152.71z"/>
+						<path id="XMLID_1253_" style="fill:#9C5C2B;" d="M298.044,196.246c2.675,0,4.489,2.742,3.46,5.231L257.77,307.254   c-0.582,1.408-1.947,2.325-3.46,2.325h-16.245h-9.372h-16.244c-1.513,0-2.878-0.917-3.46-2.325l-41.032-99.239   c-0.582-1.408-1.947-2.325-3.46-2.325h-10.778h-16.737c-1.253,0-2.424-0.631-3.119-1.682l-16.244-24.556   c-0.839-1.269-0.839-2.922,0-4.191l34.988-52.889c0.695-1.051,1.866-1.682,3.119-1.682h16.737h28.115h16.427   c1.42,0,2.718,0.808,3.353,2.088l7.3,14.712c0.635,1.28,1.933,2.088,3.353,2.088h13.303h16.042c1.614,0,3.046,1.041,3.556,2.583   l17.035,51.5c0.51,1.543,1.943,2.583,3.556,2.583h0.422H298.044z M262.874,111.246h8.929c2.07,0,3.749-1.691,3.749-3.778V96.135   c0-2.086-1.678-3.778-3.749-3.778h-3.306c-1.42,0-2.718,0.808-3.353,2.088l-5.623,11.333   C258.275,108.29,260.087,111.246,262.874,111.246z M190.824,49.857h10.218c1.435,0,2.745-0.826,3.372-2.127l12.29-25.5   c1.209-2.509-0.604-5.428-3.372-5.428h-5.157c-1.236,0-2.393,0.614-3.092,1.641l-17.351,25.5   C186.027,46.45,187.808,49.857,190.824,49.857z M277.652,11.021l-48.068,24.22c-0.584,0.294-1.081,0.736-1.443,1.283   l-17.078,25.816c-0.695,1.051-1.866,1.682-3.119,1.682h-14.036c-1.614,0-3.046,1.041-3.556,2.583l-7.237,21.88   c-0.691,2.088,0.529,4.326,2.647,4.86l31.501,7.936c1.277,0.322,2.629-0.055,3.56-0.994l25.517-25.714   c0.703-0.708,1.657-1.106,2.651-1.106h7.211c0.403,0,0.803,0.065,1.185,0.194l25.586,8.595c1.216,0.408,2.14,1.415,2.451,2.668   l8.163,32.904c0.417,1.682,1.917,2.862,3.637,2.862h12.989c1.674,0,3.145-1.118,3.604-2.74l9.157-32.298   c0.46-1.622,1.931-2.74,3.604-2.74h0.638c1.69,0,3.172,1.14,3.617,2.784l18.941,69.988c0.445,1.644,1.926,2.784,3.617,2.784h13.017   c1.69,0,3.172-1.14,3.617-2.784l13.272-49.04c0.227-0.838,0.165-1.731-0.182-2.525c-19.299-44.108-56.652-78.39-102.632-93.321   C279.547,10.495,278.529,10.579,277.652,11.021z M244.599,111.246h-12.157c-2.07,0-3.749,1.691-3.749,3.778v1.657   c0,1.786,1.242,3.329,2.976,3.697l11.232,2.383c1.998,0.424,3.966-0.842,4.425-2.847l0.925-4.04   C248.793,113.506,247.009,111.246,244.599,111.246z"/>
+						<path id="XMLID_1235_" style="fill:#A2713E;" d="M301.505,201.477l-2.941,7.113c-6.447,15.592-21.565,25.749-38.326,25.749h0   c-16.762,0-31.88-10.157-38.327-25.749l-10.195-24.658c-0.582-1.408-1.947-2.325-3.46-2.325h-10.778h-18.187   c-0.922,0-1.669-0.753-1.669-1.682l0,0c-10.676-16.139-10.676-37.164,0-53.302l3.924-5.932h19.032h16.427   c1.42,0,2.718,0.808,3.353,2.088l7.3,14.712c0.635,1.28,1.933,2.088,3.353,2.088h13.303h16.042c1.614,0,3.046,1.04,3.556,2.583   l17.035,51.5c0.51,1.543,1.943,2.583,3.556,2.583h0.422h13.121C300.719,196.246,302.534,198.988,301.505,201.477z M336.132,41.602   c-0.905-0.754-1.815-1.503-2.735-2.238c-0.635-0.507-1.278-1.004-1.92-1.502c-0.61-0.473-1.222-0.944-1.839-1.409   c-0.659-0.497-1.319-0.991-1.986-1.479c-0.685-0.502-1.378-0.993-2.072-1.484c-0.495-0.351-0.98-0.714-1.479-1.06h-0.016   c-13.286-9.204-27.942-16.544-43.605-21.631c-0.934-0.303-1.952-0.219-2.829,0.223l-22.533,11.354l6.639,16.057   c6.447,15.592,21.565,25.749,38.327,25.749c4.813,0,9.49-0.838,13.865-2.402l31.394,7.909c1.277,0.322,2.629-0.055,3.56-0.994   l7.289-7.346C350.062,54.22,343.345,47.619,336.132,41.602z"/>
+					</g>
+				</svg>
+			</div>
+          </div>
+        </div>
+        <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body">
+            <div class="h5">Career target</div>
+            <p> Recognized for establishing security policies/procedures and deploying associated infrastructure to effectively mitigate risk to systems and data, throughout the years I've specialized in large automation process, design and development, as an implementation/delivery security consultant for major Portuguese consultancy companies. Areas related to <b><i style="color: gray">Research</i></b>, <i>Data science, AI, ML, Blockchain</i>, to <b><i style="color: gray">IT Management</b></i>, <i>Blue Teaming, infrastructure, co-located / on-premise data centers, public clouds, private and hybrid (SaaS, PaaS, IaaS) (AWS, Azure, Google)</i>, to <b><i style="color: gray">DevOPS</b></i> <i>(Microsoft Team Foundation Server, Git, etc.)</i>, to <b><i style="color: gray">Implementation</b></i> <i>of automatisms for provisioning, monitoring and all the information security related ramifications</i> in general are my first focus of interest. Remote work is a plus, as well as payment in <a href="https://en.wikipedia.org/wiki/Bitcoin" Title="Bitcoin" ALT="Bitcoin">bitcoin</a>, <a href="https://en.wikipedia.org/wiki/Monero_(cryptocurrency)" Title="Monero" ALT="Monero">monero</a>, <a href="https://en.wikipedia.org/wiki/Stellar_(payment_network)" Title="Stellar Lumens" ALT="Stellar Lumens">xlm, </a><a href="https://en.wikipedia.org/wiki/Ripple_(payment_protocol)#XRP" Title="Ripple" ALT="Ripple">xrp</a>, or <a href="https://en.wikipedia.org/wiki/Zcash" Title="Zcash" ALT="Zcash">zcash</a>.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="row">
+        <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body cc-experience-header">
+            <p>January 2014 - October 2016</p>
+            <div class="h5"><a href="https://www.linkedin.com/company/sysvalue/"><img src="./images/sysvalue.png" Height="30%" Width="30%"></a></div>
+          </div>
+        </div>
+        <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body">
+            <div class="h5">CISO/DevOPS at AXA Assistance</div>
+            <p>
+			As Chief Information Security Officer, was responsible for the design, implementation, management of, and provision of expert advice on, the selection, justification, implementation, operation and assurance of group wide information security controls, processes and management strategies to maintain confidentiality, integrity, availability, and accountability, in order to protect company assets in line with applicable legislation, regulation and relevant best practice standards. Also providing leadership in relation to Information Security and Business Continuity matters, working effectively with business functions at all management levels as to provide authoritative advice and guidance on the requirements for security controls and best practices.
+			</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="row">
+        <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body cc-experience-header">
+            <p>Apr 2009 - Jan 2014</p>
+            <div class="h5"><a href="https://www.linkedin.com/company/sysvalue/"><img src="./images/sysvalue.png" Height="30%" Width="30%"></a></div>
+          </div>
+        </div>
+        <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body">
+            <div class="h5">Country Manager</div>
+            <p>
+			In 2009 I was proposed the challenge to open a company branch in Angola, wich was the company first International quest. Having double nationality and family actually living there, helped my decision on taking full responsibility for local operations in Angolan territory. Mission included ensuring office's operations, aligned with the organisation’s mission, strategic objectives and policies. Managing staff, overseeing projects and sales, ensuring the organisation follows local laws and regulations, liaising with management at the main office and providing reports on activities, ensuring proper financial controls are in place. Five years management experience and four years of experience in an international environment.
+			</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="row">
+        <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body cc-experience-header">
+            <p>Jan 2005 - October 2016</p>
+            <div class="h5"><a href="https://www.linkedin.com/company/sysvalue/"><img src="./images/sysvalue.png" Height="30%" Width="30%"></a></div>
+          </div>
+        </div>
+        <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body">
+            <div class="h5">Senior Security Consultant/Project Management/Security auditor</div>
+            <p>
+			Joined as an IT security engineer responsible for developing, implementing, administering and evaluating information security standards. Over the years, I consolidated expertise in security risk assessment, compliance, and IT governance becoming a security specialist with 20 years’ of technical, architectural, project management, data protection & GRC (Governance, Risk Management & Compliance) consultancy experience around co-located/on-premise data centres & public, private & hybrid clouds (SaaS, PaaS, IaaS). Projects ranged from endpoint security and DLP integration, infrastructure security, firewall systems, computer and network forensics, network security scans for PCI, SOX and HIPAA requirements, NOC/SOC administration, DevOPS, ISO 27001/27002, IT Risk Management and Disaster recovery, Security Awareness, etc.
+			</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="row">
+        <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body cc-experience-header">
+            <p>Jan 2003 - Jan 2005</p>
+			<div class="h5"><a href="https://www.linkedin.com/company/novabase/"><img src="./images/nb.png" Height="30%" Width="30%"></a></div>
+          </div>
+        </div>
+        <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body">
+            <div class="h5">Senior Security Consultant/Project Management</div>
+            <p>
+			Senior Security Consultant responsible for leading Security Consultancy Projects and integrating security solutions at CMVM, BCP Group and various public organizations. Responsible for the overall plan setting for the implementation and safety of CCCA homebanking multichannel architecture in conjunction with Microsoft Consulting Services. Designed and implemented Security Policies for Caixa-Geral de Depósitos in conjunction with Microsoft Consulting Services. Led the implementation of multi tier Security Architecture design, and DR security plan for TOP Atlântico Group.
+			</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="row">
+        <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body cc-experience-header">
+            <p>Jan 2001 - Jan 2003</p>
+            <div class="h5"><a href="https://www.linkedin.com/company/promosoft/"><img src="./images/promosoft.png" Height="30%" Width="30%"></a></div>
+          </div>
+        </div>
+        <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body">
+            <div class="h5">Head Coordinator of the Security Dept</div>
+            <p>
+			Challenged to create  and lead as Head Coordinator of the Security Dept. at Promosoft group, was responsible for the OTP remote access architecture design and platform implementation, to the BCP Group in conjunction with Microsoft Consulting Services. Performed integration of perimeter security solutions in various public organizations, including the design, implementation and management of cross security architectures.
+			</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="row">
+        <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body cc-experience-header">
+            <p>Jan 2000 - Jan 2001</p>
+            <div class="h5"><a href="https://www.linkedin.com/company/link-consulting/"><img src="./images/link.png" Height="30%" Width="30%"></a></div>
+          </div>
+        </div>
+        <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body">
+            <div class="h5">System Administrator, Consultant</div>
+            <p>
+			Accumulated functions as System Administrator and Consultant at Marketlink, SA a Company from AITEC group, specialized in electronic payment systems, technology, architecture development, implementation consulting and integration with overall guidance on Security in Information Technology Systems. Responsible for the implementation and management of electronic payments platform and its connections to SIBS and Unicre, for Pmelink.pt portal, among others.
+			</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="row">
+        <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body cc-experience-header">
+            <p>Jan 1995 - Dec 2000</p>
+            <div class="h5"><a href="https://www.linkedin.com/company/sas/"><img src="./images/sas.png" Height="30%" Width="30%"></a></div>
+          </div>
+        </div>
+        <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body">
+            <div class="h5">IT Administrator / Consultant</div>
+            <p>
+			My professional carrer begun at SAS Institute, Portugal, where I accumulated functions as IT Administrator and SAS consultant. Performed implementation projects and consulting for Bank of Portugal , Caixa Geral de Depósitos (Portuguese public bank) , Portugal Telecom, Portuguese Comercial Bank (BCP) Group, Insurance Company Tranquilidade , Insurance Company  Mundial Confiança, etc. Proven expertise in SAS products on various platforms (Unix , Mainframe , AS / 400 , Microsoft, Solaris,HP-UX,etc).
+			</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section" id="education">
+  <div class="container cc-education" id="edu">
+    <div class="h4 text-center mb-4 title">Education</div>
+    <div class="card">
+      <div class="row">
+        <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body cc-education-header">
+            <p>1995 - 2000</p>
+            <div class="h5"><a href="https://autonoma.pt/"><img src="images/ual.jpg" Height="30%" Width="30%"></a></div>
+          </div>
+        </div>
+        <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body">
+            <div class="h5"><a href="https://autonoma.pt/cursos/engenharia-informatica/">Computer science</a></div>
+            <p class="category"><a href="https://autonoma.pt/">Universidade Aut&oacute;noma de Lisboa</a></p>
+            <p>
+			"The Computer Engineer is a technician of high specialization, deep knower of the smallest details of the structure of technological support to the Information Society. It has the mastery of the tools and technologies of Information Systems (SI) construction and the ability to integrate the different parts of the IT building and the dimensioning of its infrastructure. He has excellent knowledge of Information Technologies and the perspective of building integrated and integrated solutions." - Excerpt from Course Curriculum Webpage
+			</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="row">
+        <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body cc-education-header">
+            <p>1993 - 1995</p>
+            <div class="h5"><a href="http://www.ulusiada.pt/"><img src="./images/ulusiada.png" Height="30%" Width="30%"></a></div>
+          </div>
+        </div>
+        <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body">
+            <div class="h5"><a href="http://www.lis.ulusiada.pt/pt-pt/cursos/2018-2019/1%C2%BAciclo%E2%80%93licenciaturasemestradosintegrados/economia.aspx">Economics</a></div>
+            <p class="category"><a href="http://www.ulusiada.pt/">Universidade Lus&Iacute;ada de Lisboa</a></p>
+            <p>
+			"The objective of the degree in Economics is to provide professionals who, in the field of economic affairs and related areas, are able to perform technical advisory, planning and evaluation and management functions, having acquired, for this purpose, relevant theoretical knowledge, analysis techniques and representation of the reality and the respective transmission, in supports appropriate to several interlocutors." - Excerpt from Course Curriculum Webpage
+			</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="row">
+        <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body cc-education-header">
+            <p>1989 - 1993</p>
+            <div class="h5"><a href="http://aesje.pt/ESSJE/index.htm"><img src="images\Digital_PT_4C_V_FC_RP.png" Height="30%" Width="30%"></a><br>High School of S. Jo&atilde;o do Estoril</div>
+          </div>
+        </div>
+        <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body">
+            <div class="h5"><a href="https://en.wikipedia.org/wiki/Science,_technology,_engineering,_and_mathematics">Science and Mathematics</a></div>
+            <p class="category"><a href="https://www.portaldasescolas.pt/portal/server.pt/community/01_escolas/240">School of Secondary board</a></p>
+            <p>
+			"The scientific-humanistic courses constitute an educational offer aimed at the pursuit of higher education studies (university or polytechnic). They are destined to students who have completed the 9th year of schooling or equivalent. They last for 3 academic years, corresponding to the 10th, 11th and 12th years of schooling. They award a high school diploma (12th grade) as well as the qualification level 3 of the National Qualifications Framework (NQF)." - Excerpt from Webpage
+			</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section" id="projects">
+  <div class="container cc-reference">
+    <div class="h4 mb-4 text-center title">Projects worth mentioning:</div>
+	<p class="category" style="font-size: 11px; text-align: center">(by business sector)</p>
+    <div class="card" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+      <div class="carousel slide" id="cc-Indicators" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li class="active" data-target="#cc-Indicators" data-slide-to="0"></li>
+          <li data-target="#cc-Indicators" data-slide-to="1"></li>
+          <li data-target="#cc-Indicators" data-slide-to="2"></li>
+          <li data-target="#cc-Indicators" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner" id="employeeprojects">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-lg-2 col-md-3 cc-reference-header">
+                <div class="h5 pt-2" style="font-size: 18px"></div>
+                <p class="category" style="font-size: 11px">Healtcare</p>
+              </div>
+              <div class="col-lg-10 col-md-9">
+                <p> 
+				<b>EPS, Management of Portuguese National Health Systems</b> : Technology Consulting and co-preparation with other entities of the specification for a PPP (contact center of health public-private partnership launched by the Ministry of Health). The work was aimed at the analysis and specification of the entire networks systems and security architecture, and the development of the organization's Business Continuity Plan; 
+				<br>
+				<b>LCS, Health Care Line</b> : design review and integration of the entire network platform, and security systems that will support the future Call-Center of Health including the definition development and implementation of the Corporate Security Policy. Development and implementation of the Business Continuity Plan supported in two geographically distant sites (Lisbon and Oporto);
+				</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-lg-2 col-md-3 cc-reference-header">
+                <div class="h5 pt-2" style="font-size: 18px"></div>
+                <p class="category" style="font-size: 11px">Public Administration</p>
+              </div>
+              <div class="col-lg-10 col-md-9">
+                <p>
+				<b>DGT - Portuguese General Directorate of the Treasury</b> - Security Audit across all technical information systems (including the banking platform). Development of the Corporate Security Policy. Design and support the implementation of a Business Continuity Plan.
+				<br><b>CMVM - Portuguese Securities Market Commission</b> - Security Audit across all technical information systems (including the banking platform). Development of the Corporate Security Policy. Design and support the implementation of a Business Continuity Plan. Responsible for the integration of a strong authentication platform for the underlying communication with regulated companies.
+				<br><b>ERSE - Portuguese Regulatory Entity for Energy Services</b> - Technological consultancy for the definition of the model of safe exchange of ERSE documents and the Entities regulated by them. Support for the development and operation of the solution chosen by ERSE;
+				<br><b>Autoridade da Concorrência - Portuguese Competition Authority</b> - Part of the team responsible for the design and implementation of the organization's entire Internet access infrastructure (two levels of firewalling and messaging infrastructure, both in high availability)
+				</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-lg-2 col-md-3 cc-reference-header">
+                <div class="h5 pt-2" style="font-size: 12px"></div>
+                <p class="category" style="font-size: 11px">Financial</p>
+              </div>
+              <div class="col-lg-10 col-md-9">
+                <p>
+				<b>CCCA - Caixa Central de Crédito Agrícola</b> - Responsible for the definition of the global security plan. Involvement in the design of the architecture of the Homebanking multichannel in conjunction with Microsoft Consulting Services. 
+				<br><b>Grupo BCP - Portuguese Comercial Bank</b> - Responsible for the implementation, provisioning process definition and certification of support team of the globally adopted OTP authentication security platform (15000 hardware keys).
+				<br><b>Banco Primus</b> - Design, implementation and management of Information Systems architecture, with activity in Portugal, Spain and Hungary. Study of the installed capacity in communications and processing capacity of the Bank's communications and information systems as requested by Portuguese Central Bank. Development and support to the implementation of the Business Continuity Plan (project presented in InfoSec 2006);
+				<br><b>CGD - Caixa Geral de Depósitos Group</b> - Involvement in a consulting project to support the redefinition of group security policies in conjunction with Microsoft Consulting Services.
+				<br><b>Credibom</b> - Involvement in the study and integration of a firewall solution in depth (two levels) of high availability and load balanced. Involvement in the integration of a bandwidth optimization and compression solution in the bank's WAN.
+				<br><b>BES</b> - Involved in the implementation of the electronic payment systems of the portal Pmelink.pt, and responsible for its administration.
+				</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-lg-2 col-md-3 cc-reference-header">
+                <div class="h5 pt-2" style="font-size: 12px"></div>
+                <p class="category" style="font-size: 11px">Telecommunications</p>
+              </div>
+              <div class="col-lg-10 col-md-9">
+                <p>
+				<b>Portugal Telecom</b> – Responsible for the implementation, definition of the process of provisioning and certification of the support team of the strong authentication platform or second factor (OTP) adopted globally (10000 hardware keys).
+				<br><b>ZON / PT</b> - Involvement as a consultant in the project of the spin-off between <i>TVCabo</i> and <i>Portugal Telecom</i> group.
+				<br><b>IOL Media Capital</b> - Technical and operational support to the entire security and availability component of the public presence, of the Internet Media group (firewalling, communications, service balancing and web application performance acceleration)
+				</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="section" id="reference">
+  <div class="container cc-reference">
+    <div class="h4 mb-4 text-center title">References</div>
+    <div class="card" data-aos="zoom-in">
+      <div class="carousel slide" id="cc-Indicators" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li class="active" data-target="#cc-Indicators" data-slide-to="0"></li>
+          <li data-target="#cc-Indicators" data-slide-to="1"></li>
+          <li data-target="#cc-Indicators" data-slide-to="2"></li>
+          <li data-target="#cc-Indicators" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner" id="employeereferences">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-lg-2 col-md-3 cc-reference-header"><img src="./images/jbarreto.jpg" alt="Image"/>
+                <div class="h5 pt-2" style="font-size: 12px">Jo&atilde;o Barreto</div>
+                <p class="category" style="font-size: 11px">CEO Sysvalue, S.A.</p>
+              </div>
+              <div class="col-lg-10 col-md-9">
+                <p> 
+				Marco Vaz is a top-quality professional with a mix of strong technical skills, a customer-centric vision and leadership and team management qualities. His enthusiam and knowledge on Security has been very valuable for SysValue as a team and for all he's colleagues on a personnel level. He's also industrious and dedicated what is rare to find these days.
+				</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-lg-2 col-md-3 cc-reference-header"><img src="./images/aofaria.jpg" alt="Image"/>
+                <div class="h5 pt-2" style="font-size: 12px">&Aacute;lvaro Oliveira de Faria</div>
+                <p class="category" style="font-size: 11px">CEO SAS Portugal</p>
+              </div>
+              <div class="col-lg-10 col-md-9">
+                <p>
+				Marco was employee of SAS Portugal and played different roles. He is smart and competent and has proven a high level of maturity. I would strongly recommend Marco to the different roles and functions that he has experienced in SAS.				
+				</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-lg-2 col-md-3 cc-reference-header"><img src="./images/avasconcelos.jpg" alt="Image"/>
+                <div class="h5 pt-2" style="font-size: 12px">Ant&oacute;nio Vasconcelos</div>
+                <p class="category" style="font-size: 11px">Program Manager Microsoft</p>
+              </div>
+              <div class="col-lg-10 col-md-9">
+                <p>
+				Marco has been an example for me ever since. His excellent professionalism, leadership and encouragement transmits you the confidence to break difficulties and achieve goals without any doubts. Impressive is also his knowledge, vast in all fields of IT and also general culture. The best of the best friend and colleague!				
+				</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section" id="logos">
+	<div id="employeeexpertise" class="h4 mb-4 text-center title">Expertise/Certifications</div><br>
+  <div class="container logos">
+  <section class="customer-logos slider">
+	<div><img class="ffb-id-hpuuv43 fg-image card img-responsive fg-text-dark" src="./images/expertise/AlienVault.svg.png"></div>
+	<div><img class="ffb-id-hpuuv43 fg-image card img-responsive fg-text-dark" src="./images/expertise/amazon.png"></div>
+	<div><img class="ffb-id-hpuuv43 fg-image card img-responsive fg-text-dark" src="./images/expertise/ca.png"></div>
+	<div><img class="ffb-id-hpuuv43 fg-image card img-responsive fg-text-dark" src="./images/expertise/checkpoint.png"></div>
+	<div><img class="ffb-id-hpuuv43 fg-image card img-responsive fg-text-dark" src="./images/expertise/cisco.png"></div>
+	<div><img class="ffb-id-hpuuv43 fg-image card img-responsive fg-text-dark" src="./images/expertise/citrix.png"></div>
+	<div><img class="ffb-id-hpuuv43 fg-image card img-responsive fg-text-dark" src="./images/expertise/f5.png"></div>
+	<div><img class="ffb-id-hpuuv43 fg-image card img-responsive fg-text-dark" src="./images/expertise/fireeye.png"></div>
+	<div><img class="ffb-id-hpuuv43 fg-image card img-responsive fg-text-dark" src="./images/expertise/fortinet.png"></div>	
+	<div><img class="ffb-id-hpuuv43 fg-image card img-responsive fg-text-dark" src="./images/expertise/google.png"></div>
+	<div><img class="ffb-id-hpuuv43 fg-image card img-responsive fg-text-dark" src="./images/expertise/hp.png"></div>
+	<div><img class="ffb-id-hpuuv43 fg-image card img-responsive fg-text-dark" src="./images/expertise/ibm.png"></div>
+	<div><img class="ffb-id-hpuuv43 fg-image card img-responsive fg-text-dark" src="./images/expertise/intel.png"></div>
+	<div><img class="ffb-id-hpuuv43 fg-image card img-responsive fg-text-dark" src="./images/expertise/julia.png"></div>
+	<div><img class="ffb-id-hpuuv43 fg-image card img-responsive fg-text-dark" src="./images/expertise/juniper.png"></div>
+	<div><img class="ffb-id-hpuuv43 fg-image card img-responsive fg-text-dark" src="./images/expertise/mcafee.png"></div>
+	<div><img class="ffb-id-hpuuv43 fg-image card img-responsive fg-text-dark" src="./images/expertise/microsoft.png"></div>
+	<div><img class="ffb-id-hpuuv43 fg-image card img-responsive fg-text-dark" src="./images/expertise/netapp.png"></div>
+	<div><img class="ffb-id-hpuuv43 fg-image card img-responsive fg-text-dark" src="./images/expertise/oracle.png"></div>
+	<div><img class="ffb-id-hpuuv43 fg-image card img-responsive fg-text-dark" src="./images/expertise/paloalto.png"></div>
+	<div><img class="ffb-id-hpuuv43 fg-image card img-responsive fg-text-dark" src="./images/expertise/python.png"></div>
+	<div><img class="ffb-id-hpuuv43 fg-image card img-responsive fg-text-dark" src="./images/expertise/qualys.png"></div>
+	<div><img class="ffb-id-hpuuv43 fg-image card img-responsive fg-text-dark" src="./images/expertise/R.png"></div>
+	<div><img class="ffb-id-hpuuv43 fg-image card img-responsive fg-text-dark" src="./images/expertise/sap.png"></div>
+	<div><img class="ffb-id-hpuuv43 fg-image card img-responsive fg-text-dark" src="./images/expertise/sas.png"></div>
+	<div><img class="ffb-id-hpuuv43 fg-image card img-responsive fg-text-dark" src="./images/expertise/solarwinds.png"></div>
+	<div><img class="ffb-id-hpuuv43 fg-image card img-responsive fg-text-dark" src="./images/expertise/splunk.png"></div>
+	<div><img class="ffb-id-hpuuv43 fg-image card img-responsive fg-text-dark" src="./images/expertise/symantec.png"></div>
+	<div><img class="ffb-id-hpuuv43 fg-image card img-responsive fg-text-dark" src="./images/expertise/trendmicro.png"></div>
+	<div><img class="ffb-id-hpuuv43 fg-image card img-responsive fg-text-dark" src="./images/expertise/vmware.png"></div>
+  </section>
+ </div>
+</div>
+
+
+<div class="section" id="contact" style="overflow-y: hidden; overflow-x: hidden;">
+  <div class="cc-contact-information" style="overflow-y: hidden; overflow-x: hidden; background-image: url('images/staticmap.png');">
+    <div class="container">
+      <div class="cc-contact">
+        <div class="row">
+          <div class="col-md-9">
+            <div class="card mb-0" >
+              <div class="h4 text-center title">Contact Me</div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="card-body">
+                    <form action="https://formspree.io/marco.trancoso.vaz@gmail.com" method="POST">
+                      <div class="p pb-3"><strong>Feel free to contact me </strong></div>
+                      <div class="row mb-3">
+                        <div class="col">
+                          <div class="input-group"><span class="input-group-addon"><i class="fa fa-user-circle"></i></span>
+                            <input class="form-control" type="text" name="name" placeholder="Name" required="required"/>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <div class="col">
+                          <div class="input-group"><span class="input-group-addon"><i class="fa fa-file-text"></i></span>
+                            <input class="form-control" type="text" name="Subject" placeholder="Subject" required="required"/>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <div class="col">
+                          <div class="input-group"><span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                            <input class="form-control" type="email" name="_replyto" placeholder="E-mail" required="required"/>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <div class="col">
+                          <div class="form-group">
+                            <textarea class="form-control" name="message" placeholder="Your Message" required="required"></textarea>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col">
+                          <button class="btn btn-primary" type="submit">Send</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="card-body">
+                    <p class="mb-0"><strong>Address </strong></p>
+                    <p class="pb-2">S. Pedro do Estoril, Cascais, Portugal</p>
+                    <p class="mb-0"><strong>Phone</strong></p>
+                    <p class="pb-2">+351 915 037 431</p>
+                    <p class="mb-0"><strong>Email</strong></p>
+                    <p>marco.trancoso.vaz@gmail.com</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></div>
+    </div>
+    <footer class="footer">
+      <div class="container text-center"><a class="cc-facebook btn btn-link" href="#"><i class="fa fa-github fa-2x " aria-hidden="true"></i></a><a class="cc-twitter btn btn-link " href="#"><i class="fa fa-twitter fa-2x " aria-hidden="true"></i></a><a class="cc-google-plus btn btn-link" href="#"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a><a class="cc-instagram btn btn-link" href="#"><i class="fa fa-medium fa-2x " aria-hidden="true"></i></a></div>
+      <div class="h4 title text-center">Marco Trancoso Vaz</div>
+      <div class="text-center text-muted">
+        <p>&copy; Creative CV. All rights reserved.<br>Design - <a class="credit" href="https://templateflip.com" target="_blank">TemplateFlip</a></p>
+      </div>
+    </footer>
+    <!-- <script src="js/core/jquery.3.2.1.min.js"></script> -->
+    <script
+      src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"
+      integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0="
+      crossorigin="anonymous">
+    </script>
+    <script src="js/core/popper.min.js"></script>
+    <script src="js/core/bootstrap.min.js"></script>
+    <!-- <script src="js/now-ui-kit.js?v=1.1.0"></script> -->
+    <script src="js/aos.js"></script>
+    <script src="scripts/main.js"></script>
+	<script src="js/three.min.js"></script>
+	<!-- <script src="/examples/js/renderers/CanvasRenderer.js"></script> -->
+	<script src="js/OrbitControls.js"></script>	
+	<script src="js/Detector.js"></script>		
+	<script>
+
+	$("#sphere").resizable({handles: 'n,w,s,e', minWidth: 200, maxWidth: 600});    
+	$("#sphere").on( "resizestop", function( event, ui ) {
+		google.maps.event.trigger(panorama, 'resize');
+		console.log('streetview resize ended');
+	});
+
+		var webglEl = document.getElementById('sphere');
+
+		var width  = window.innerWidth,
+			height = window.innerHeight;
+
+		var scene = new THREE.Scene();
+
+		var camera = new THREE.PerspectiveCamera(75, width / height, 1, 1000);
+		camera.position.x = 0.1;
+
+		var renderer = Detector.webgl ? new THREE.WebGLRenderer() : new THREE.CanvasRenderer();
+		renderer.setSize(width, height);
+    var url = window.location.href
+    var test = url.split('?')[1]
+    if (test){ 
+      var picname = url ? url.split('?')[1].split('+')[2].split('#')[0] : window.location.search.slice(1); 
+    }else{ picname = "spedro"}
+    if (picname.includes('http')){ console.log(picname) }else{ picname = './pano/'+picname+'.jpg' }
+    THREE.ImageUtils.crossOrigin = '';
+		var sphere = new THREE.Mesh(
+			new THREE.SphereGeometry(100, 20, 20),
+			new THREE.MeshBasicMaterial({
+				map: THREE.ImageUtils.loadTexture(picname)
+			})
+		);
+    //sphere.map.minFilter = THREE.LinearFilter
+		sphere.scale.x = -1;
+		scene.add(sphere);
+
+		var controls = new THREE.OrbitControls(camera);
+		controls.noPan = true;
+		controls.noZoom = true; 
+		controls.autoRotate = true;
+		controls.autoRotateSpeed = 0.5;
+
+		webglEl.appendChild(renderer.domElement);
+
+		render();
+
+		function render() {
+			controls.update();
+			requestAnimationFrame(render);
+			renderer.render(scene, camera);
+		}
+
+		function onMouseWheel(event) {
+			event.preventDefault();
+			
+			if (event.wheelDeltaY) { // WebKit
+				camera.fov -= event.wheelDeltaY * 0.05;
+			} else if (event.wheelDelta) { 	// Opera / IE9
+				camera.fov -= event.wheelDelta * 0.05;
+			} else if (event.detail) { // Firefox
+				camera.fov += event.detail * 1.0;
+			}
+
+			camera.fov = Math.max(40, Math.min(100, camera.fov));
+			camera.updateProjectionMatrix();
+		}
+
+		<!-- document.addEventListener('mousewheel', onMouseWheel, false); -->
+		<!-- document.addEventListener('DOMMouseScroll', onMouseWheel, false); -->
+
+	</script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+  <script type="text/javascript">
+$(document).ready(function(){
+  $('.customer-logos').slick({
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 1000,
+    arrows: false,
+    dots: false,
+    pauseOnHover: false,
+    responsive: [{
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 4
+      }
+    }, {
+      breakpoint: 520,
+      settings: {
+        slidesToShow: 3
+      }
+    }]
+  });
+});
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/0.71/jquery.csv-0.71.min.js"></script>
+<script>
+  $.getScript( "js/userdata-remote.js" )
+    .done(function( script, textStatus ) {
+      console.log( textStatus );
+    })
+    .fail(function( jqxhr, settings, exception ) {
+      console.log("Failed");
+  });
+</script>
+<script src="js/cube/jquery.flipbox.js"></script>
+
+  </body>
+</html>
