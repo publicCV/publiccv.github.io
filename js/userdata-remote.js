@@ -37,7 +37,7 @@ function loadUserData() {
         $('#employephone').text(data[1][5]);
         $('#employeesmalladdress').text(data[1][6]);
         $('#employeelanguages').text(data[1][7]);
-        $('#employeephoto').attr("src", "images/"+data[1][8]);
+        $('#employeephoto').attr("src", data[1][8]);
         }   
     });
 
